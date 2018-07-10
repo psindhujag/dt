@@ -1,0 +1,1933 @@
+1) hello  
+___________________________________________________________________________________________________________
+code:-
+class Basicjava
+{
+//execution entry point
+public static void main(String args[])
+{
+ //printing statement
+  System.out.print("welcome to java");
+}
+}
+
+2) read a charcter and print it twice
+ _______________________________________________________________________________________________________
+code:-
+import java.util.*;
+class Characterreadingtwice
+{
+ public static void main(String argv[])
+ {
+   String s1;
+   char ch;
+   Scanner sc=new Scanner(System.in);
+   s1=sc.nextLine();
+   ch=s1.charAt(0);
+   System.out.println("character="+ch);
+   System.out.println("character="+ch);
+}
+}
+
+3)read a string and print it twice
+____________________________________________________________________________________________________________
+code:-
+import java.util.*;
+class Stringreadingtwice
+{
+ public static void main(String argv[])
+ {
+   String s1;
+   Scanner sc=new Scanner(System.in);
+   s1=sc.nextLine();
+   System.out.println("string="+s1);
+   System.out.println("string="+s1);
+}
+}
+
+4)read two numbers and print sum of 2 numbers
+____________________________________________________________________________________________________________
+code:-
+import java.util.*;
+class Scanneradd
+{
+ public static void main(String argv[])
+ {
+   int a,b,result;
+   Scanner sc=new Scanner(System.in);
+   a=sc.nextInt();
+   b=sc.nextInt();
+   result=a+b;
+   System.out.println("addition="+result);
+}
+}
+
+5)read age from user and print eligibility for voting
+___________________________________________________________________________________________________________
+code:-
+import java.util.*;
+class Age
+{
+public static void main(String args[])
+{
+  int age;
+  Scanner sc=new Scanner(System.in);
+  age=sc.nextInt();
+  if(age>=18)
+  {
+   System.out.println("eligible for voting");
+  }
+  else
+  {
+   System.out.println("not eligiblr for voting");
+  }
+}
+}
+
+6)read a charcter and print small or capital or number or special charcter
+______________________________________________________________________________________________________________
+code:-
+import java.util.*;
+class Charnumspecialchar
+{
+ public static void main(String argv[])
+ {
+   String s1;
+   char ch;
+   Scanner sc=new Scanner(System.in);
+   s1=sc.nextLine();
+   ch=s1.charAt(0);
+   if(ch>=65 && ch<=90)
+   {
+     System.out.println("capital="+ch);
+   }
+   else if(ch>=97 && ch<=122)
+   {
+     System.out.println("small="+ch);
+   }
+   else if(ch>='0' && ch<='9')
+   {
+      System.out.println("number="+ch);
+   }
+   else
+   {
+      System.out.println("specialcharacter="+ch);
+   }
+}
+}
+
+7)read a month number from user and print season of that month
+____________________________________________________________________________________________________________
+code:-
+import java.util.*;
+class Season
+{
+public static void main(String argv[])
+{
+ int m;
+ Scanner sc=new Scanner(System.in);
+ m=sc.nextInt();
+ if(m>=2 && m<=5)
+ {
+   System.out.println("summer");
+ }
+ else if(m>=6 && m<=9)
+ {
+   System.out.println("rainy");
+ }
+ else if(m>=10 && m<=12 || m==1)
+ {
+   System.out.println("winter");
+ }
+ else
+ {
+   System.out.println("enter valid month");
+  }
+}
+}
+
+8)read a month number from user and print name of that month
+____________________________________________________________________________________________________________
+code:-
+import java.util.*;
+class Readingmonth
+{
+ public static void main(String argv[])
+ {
+   int m;
+   Scanner sc=new Scanner(System.in);
+   m=sc.nextInt();
+   System.out.println("month="+m);
+   switch(m)
+   {
+     case 1: 
+               System.out.println("jan");
+               break;
+     case 2:
+               System.out.println("feb");
+               break;
+     case 3: 
+               System.out.println("wed");
+               break;
+     case 4:
+               System.out.println("thur");
+               break;
+     case 5:
+               System.out.println("fri");
+               break;
+     default:
+               System.out.println("enter valid month");
+               break;
+    }
+}
+}
+
+
+9)read a alphabet from user and print vowel or consonent
+_________________________________________________________________________________________________________________
+code:-
+import java.util.*;
+class Vowel
+{
+ public static void main(String argv[])
+ {
+   String s1;
+   char ch;
+   Scanner sc=new Scanner(System.in);
+   s1=sc.nextLine();
+   ch=s1.charAt(0);
+   System.out.println("character="+ch);
+   switch(ch)
+   {
+     case 'a': 
+               System.out.println("vowel");
+               break;
+     case 'e':
+               System.out.println("vowel");
+               break;
+     case 'i': 
+               System.out.println("vowel");
+               break;
+     case 'o':
+               System.out.println("vowel");
+               break;
+     case 'u':
+               System.out.println("vowel");
+               break;
+     default:
+               System.out.println("consonent");
+               break;
+    }
+}
+}
+
+
+10)hello 5 times using for
+______________________________________________________________________________________________________________
+code:-
+import java.util.*;
+class Forhello5times
+{
+ public static void main(String argv[])
+ {
+   int i;
+   String s1;
+   Scanner sc=new Scanner(System.in);
+   s1=sc.nextLine();
+   System.out.println("string="+s1);
+   for(i=1;i<6;i++)
+  {
+   System.out.println(s1);
+  }
+
+}
+}
+
+11)display 5 th table using for
+______________________________________________________________________________________________________________
+code:-
+import java.util.*;
+class For5thtable
+{
+ public static void main(String argv[])
+ {
+   int i;
+   Scanner sc=new Scanner(System.in);
+   for(i=1;i<11;i++)
+  {
+   System.out.println("5*"+i+"="+5*i);
+  }
+
+}
+}
+
+12) display 6th to 14 th table
+_______________________________________________________________________________________________________________
+code:-
+import java.util.*;
+class For6to14tables
+{
+ public static void main(String argv[])
+ {
+   int i,j;
+   Scanner sc=new Scanner(System.in);
+   for(i=6;i<15;i++)
+  {
+   for(j=1;j<11;j++)
+   {
+   System.out.println(+i+"*"+j+"="+i*j);
+   }
+   System.out.println("\n");
+   }
+
+}
+}
+
+13)
+pattern 
+_____________________________________________________________________________________________________________
+codes:-
+(1)
+class Pattern1122
+{
+ public static void main(String argv[])
+ {
+   int i,j;
+   for(i=4;i>=1;i--)
+   {
+    for(j=1;j<=i;j++)
+    {
+     System.out.print(j);
+    }
+     System.out.println("\n");
+  }
+
+}
+}
+
+(2)
+class Pattern1122reverse
+{
+ public static void main(String argv[])
+ {
+   int i,j;
+   for(i=1;i<5;i++)
+   {
+    for(j=1;j<=i;j++)
+    {
+     System.out.print(" "+j);
+    }
+     System.out.println("\n");
+  }
+
+}
+}
+
+(3)
+
+class Pattern1234
+{
+ public static void main(String argv[])
+ {
+   int i,j;
+   for(i=1;i<5;i++)
+   {
+    for(j=1;j<=i;j++)
+    {
+     System.out.print(" "+i);
+    }
+     System.out.println("\n");
+  }
+
+}
+}
+
+(4)
+class Pattern1234reverse
+{
+ public static void main(String argv[])
+ {
+   int i,j;
+   for(i=4;i>=1;i--)
+   {
+    for(j=1;j<=i;j++)
+    {
+     System.out.print(" "+i);
+    }
+     System.out.println("\n");
+  }
+
+}
+}
+
+14)read rollno and marks and store in array and print array
+______________________________________________________________________________________________________________
+code:-
+import java.util.*;
+class ArrRollMarks
+{
+ public static void main(String argv[])
+ {
+ int i;
+ int r[]=new int[5];
+ int m[]=new int[5];
+ Scanner sc=new Scanner(System.in);
+ for(i=0;i<5;i++)
+ {
+  System.out.println("enter the roll num=");
+  r[i]=sc.nextInt();
+  System.out.println("roll num="+r[i]);
+  System.out.println("enter the marks=");
+  m[i]=sc.nextInt();
+  System.out.println("marks="+m[i]);
+ }
+ }
+}
+
+15)read elements from user and store them in array and find biggest element in the array
+____________________________________________________________________________________________________________
+code:-
+class BigArray
+{ 
+ public static void main(String argv[])
+ {
+  int i;
+  int a[]={50,20,40,30,10};
+  int temp=0;
+  for(i=0;i<5;i++)
+  {
+    if(temp<a[i])
+    {
+     temp=a[i];
+    }
+}  
+  System.out.println("small="+temp);
+  
+ }
+}
+   
+16)read elements from user and store them in array and find smallest element in the array
+______________________________________________________________________________________________________________
+code:-
+class SmallArray
+{ 
+ public static void main(String argv[])
+ {
+  int i;
+  int a[]={50,20,40,30,10};
+  int temp=a[0];
+  for(i=0;i<5;i++)
+  {
+    if(temp>a[i])
+    {
+     temp=a[i];
+    }
+}  
+  System.out.println("small="+temp);
+  
+ }
+}
+  
+17)print a to z and A to Z
+___________________________________________________________________________________________________________
+code:-
+import java.util.*;
+class Atozandatoz
+{
+ public static void main(String args[])
+ {
+   char ch;
+   for(ch=65;ch<=90;ch++)
+   {
+    System.out.println("capital="+ch);
+   }
+   System.out.print("\n");
+   for(ch=97;ch<=122;ch++)
+   {
+     System.out.println("small="+ch);
+    }
+  }
+}
+
+18)read marks from student  and store them in array and find sum and average
+_____________________________________________________________________________________________________________
+code:-
+import java.util.*;
+class ArrSumAvg
+{
+ public static void main(String argv[])
+ {
+ int i;
+ int sum=0;
+ float avg;
+ int m[]=new int[5];
+ Scanner sc=new Scanner(System.in);
+ for(i=0;i<5;i++)
+ {
+  System.out.println("enter the marks=");
+  m[i]=sc.nextInt();
+  System.out.println("marks="+m[i]);
+  sum=sum+m[i];
+  
+ }
+   System.out.println("sum="+sum);
+    System.out.println("avg="+avg);
+ }
+}
+  
+  
+19)programs on condition check
+(1)find max between two numbers
+______________________________________________________________________________________________________________
+code:-
+import java.util.*;
+class Biggest
+{
+public static void main(String args[])
+{
+ Scanner sc=new Scanner(System.in);
+ int a,b;
+ a=sc.nextInt();
+ b=sc.nextInt();
+ if(a>b)
+ {
+  System.out.println("a is big is="+a);
+ }
+else
+{
+  System.out.println("b is big="+b); 
+ }
+}
+}
+
+
+(2)find max between two numbers
+______________________________________________________________________________________________________________
+code:-
+import java.util.*;
+class Max
+{
+public static void main(String args[])
+{
+ Scanner sc=new Scanner(System.in);
+ int a,b;
+ a=sc.nextInt();
+ b=sc.nextInt();
+ if(a>b)
+ {
+  System.out.println("a is max is="+a);
+ }
+else
+{
+  System.out.println("b is max="+b); 
+ }
+}
+}
+
+
+(3)check a number is positive or negative or zero
+_____________________________________________________________________________________________________________
+code:-
+import java.util.*;
+class Numbers
+{
+ public static void main(String argv[])
+ {
+    
+   int n;
+   Scanner sc=new Scanner(System.in);
+   n=sc.nextInt();
+    if(n>0)
+    {
+     System.out.println(" positive numbers");
+    }
+  
+    else
+    {
+      System.out.println(" negative numbers");
+    }
+
+ }
+}    
+
+(4)check number is devisible by 5 or 11 or not
+_____________________________________________________________________________________________________________
+code:-
+import java.util.*;
+class Numbers
+{
+ public static void main(String argv[])
+ {
+    
+   int n;
+   Scanner sc=new Scanner(System.in);
+   n=sc.nextInt();
+    if((n%5==0) && (n%11==0))
+    {
+     System.out.println(" divisible by 5 and 11");
+    }
+  
+    else
+    {
+      System.out.println(" not divisible");
+    }
+
+ }
+}
+
+(5)even or odd
+_______________________________________________________________________________________________________________
+code:-
+import java.util.*;
+class Leap
+{
+public static void main(String argv[])
+{
+int n; 
+Scanner sc=new Scanner(System.in);
+n=sc.nextInt();
+if(n%2==0)
+{
+ System.out.println("even");
+}
+else
+{
+System.out.println("not even");
+}
+}
+}
+ 
+(6)read year from user and print leap year or not 
+______________________________________________________________________________________________________________
+code:-
+import java.util.*;
+class Leap
+{
+public static void main(String argv[])
+{
+int y; 
+Scanner sc=new Scanner(System.in);
+y=sc.nextInt();
+if(y%4==0)
+{
+ System.out.println("leap");
+}
+else
+{
+System.out.println("not leap");
+}
+}
+}
+
+20)sort an array
+array in accending order
+____________________________________________________________________________________________________________ 
+code:-
+import java.util.*;
+class ArrAccending
+{
+ public static void main(String args[])
+{
+ int i,j;
+ int temp;
+ int a[]={30,50,20,40,10};
+ for(i=0;i<5;i++)
+ {
+  for(j=i+1;j<5;j++)
+  {
+    if(a[i]>a[j])
+    {
+    temp=a[i];
+    a[i]=a[j];
+    a[j]=temp;
+    }
+   }
+  }
+ for(i=0;i<5;i++)
+ {
+ System.out.println("accending ="+a[i]);
+ }
+}
+}
+
+21)array in decending order
+______________________________________________________________________________________________________________-
+code:-
+import java.util.*;
+class ArrDecending
+{
+ public static void main(String args[])
+{
+ int i,j;
+ int temp;
+ int a[]={30,50,20,40,10};
+ for(i=0;i<5;i++)
+ {
+  for(j=i+1;j<5;j++)
+  {
+    if(a[i]<a[j])
+    {
+    temp=a[i];
+    a[i]=a[j];
+    a[j]=temp;
+    }
+   }
+  }
+ for(i=0;i<5;i++)
+ {
+ System.out.println("decending ="+a[i]);
+ }
+}
+}
+
+22)palindrome program
+_____________________________________________________________________________________________________________
+code:-
+import java.util.*;
+class PallindromeNumber
+{
+  public static void main(String argv[])
+  {
+   int r,n,temp;
+   int rev=0;
+   Scanner sc=new Scanner(System.in);
+   n=sc.nextInt();
+   System.out.println("number="+n);
+   temp=n;
+   while(n>0)
+   {
+     r=n%10;
+     rev=rev*10+r;
+     n=n/10;
+   }
+   System.out.println(" reverse of number="+rev);
+   if(temp==rev)
+   {
+     System.out.println("number is pallindrome");
+   }
+   else  
+   {
+     System.out.println("number is not palindrome");
+   }
+}
+}
+
+23)
+read a character and convert into capital
+____________________________________________________________________________________________________________
+code:-
+import java.util.*;
+class Charsmalltocapital
+{
+ public static void main(String args[])
+ {
+ int x;
+ String s1;
+ char ch;
+ Scanner sc=new Scanner (System.in);
+ s1=sc.nextLine();
+ ch=s1.charAt(0);
+ x=(int)ch;
+ x=x-32;
+ System.out.println("char="+(char)x);
+ }
+}
+
+
+
+24)read a string and convert into capital
+____________________________________________________________________________________________________________
+code:-
+import java.util.*;
+class Stringsmalltocapital
+{
+ public static void main(String args[])
+ {
+  int i,x;
+  String s1;
+  char ch[]=new char[20];
+  Scanner sc=new Scanner(System.in);
+  s1=sc.nextLine();
+  for(i=0;i<5;i++)
+  {
+    ch[i]=s1.charAt(i);
+     x=(int)ch[i];
+    if(ch[i]=='\0')
+    {
+      break;
+    }
+    x=x-32;
+    System.out.println("string="+(char)x);
+ }
+}
+}
+
+
+25)read a number and check whether it is prime or not
+________________________________________________________________________________________________________________
+code:-
+import java.util.*;
+class Prime
+{
+ public static void main(String argv[])
+ {
+   Scanner sc=new Scanner(System.in);
+   int i,num;
+   num=sc.nextInt();
+   int count=0;
+   for(i=1;i<num;i++)
+   {
+    if(num%i==0)
+    {
+     count++;
+    }
+   }
+    System.out.println("count="+count);
+    if(count<2)
+    {
+      System.out.println(" prime");
+    }
+    else
+    {
+      System.out.println("not prime");
+    }
+   }
+}  
+   
+26)fibonacci series program
+___________________________________________________________________________________________________________
+code:-
+ class Fibonacci 
+{
+  public static void main(String args[]) 
+ {
+   int n;
+   int t1 = 0, t2 = 1;
+   System.out.print("First " + n + " terms: ");
+   for (int i = 1; i <= n; ++i)
+   {
+     System.out.print(t1 + " + ");
+     int sum = t1 + t2;
+     t1 = t2;
+     t2 = sum;
+    }
+  }
+}
+
+
+
+28)print prime numbers 1 to 100
+____________________________________________________________________________________________________________
+code:-
+import java.util.*;
+class Prime1to100
+{
+ public static void main(String argv[])
+ {
+   int i,j;
+   for(i=1;i<100;i++)
+   {
+     int count=0;
+     for(j=1;j<=i;j++)
+     {
+       if(i%j==0)
+       {
+         count++;
+       } 
+     }
+    if(count==2)
+    {
+      System.out.println(i);
+      continue;
+    }
+   }
+}  
+   
+}
+
+
+
+29)print last digit of a number
+________________________________________________________________________________________________________________
+code:-
+import java.util.*;
+class LastDigit
+{
+  public static void main(String argv[])
+  {
+   int r,n;
+   Scanner sc=new Scanner(System.in);
+   n=sc.nextInt();
+   System.out.println("number="+n);
+   r=n%10;
+   System.out.println("lastdigit="+r);
+  }
+}
+
+
+30)print reverse of a number
+_____________________________________________________________________________________________________________
+code:-
+import java.util.*;
+class ReverseNumber
+{
+  public static void main(String argv[])
+  {
+   int r,n;
+   int rev=0;
+   Scanner sc=new Scanner(System.in);
+   n=sc.nextInt();
+   System.out.println("number="+n);
+   while(n>0)
+   {
+     r=n%10;
+     rev=rev*10+r;
+     n=n/10;
+   }
+   System.out.println(" reverse of number="+rev);
+  }
+}
+
+
+31)print armstrong number
+______________________________________________________________________________________________________________
+code:-
+
+import java.util.*;
+class Armstrong
+{
+  public static void main(String argv[])
+  {
+   int r,n,temp;
+   int sum=0;
+   Scanner sc=new Scanner(System.in);
+   n=sc.nextInt();
+   System.out.println("number="+n);
+   temp=n;
+   while(n!=0)
+   {
+     r=n%10;
+     n=n/10;
+     sum=sum+(r*r*r);
+   }
+   if(temp==sum)
+   {
+   System.out.println(" armstrong number");
+  }
+  else
+  {
+   System.out.println("not armstrong");
+  }
+ }
+}
+
+32)searching a number
+________________________________________________________________________________________________________________
+code:-
+//linear search
+import java.util.*;
+class SearchNumber
+{
+ public static void main(String argv[])
+ {
+  Scanner sc=new Scanner(System.in);
+  int i,n,search;
+  System.out.println("enter no of  elements:");
+  n=sc.nextInt();
+  int a[]=new int[10];
+  for(i=0;i<n;i++)
+  {
+    System.out.println(" elements elements");
+    a[i]=sc.nextInt();
+  }
+
+  System.out.println("enter element to find:");
+  search=sc.nextInt();
+
+  for(i=0;i<n;i++)
+   { 
+    if(search==a[i])
+    {
+     System.out.println(search+"element is found:"+(i+1));
+     }
+   }
+  
+  if(i==n)
+  {
+   System.out.println("element is not found:");
+  }
+ }
+}
+
+33)printing numbers by skipping some numbers from middle
+______________________________________________________________________________________________________________
+code:-
+import java.util.*;
+class Numbers
+{
+ public static void main(String argv[])
+ {
+   int i; 
+   int n[]=new int[15];
+   Scanner sc=new Scanner(System.in);
+  
+   for(i=1;i<15;i++)
+   {
+     n[i]=sc.nextInt();
+     if(i>=5 && i<=10)
+     {
+        continue;
+     }
+    System.out.println("number="+i);
+   }
+ }
+}
+
+34)program on class and objects
+_____________________________________________________________________________________________________________
+code:-
+class Student
+{
+ int rollno;
+ String name;
+ int marks;
+}
+class ExecuteStudent
+{
+ public static void main(String args[])
+{
+ Student s1;
+ Student s2;
+ s1=new Student();
+ s2=new Student();
+ System.out.println("address of s1="+s1);
+ System.out.println("address of s2="+s2);
+}
+}
+
+
+35)program on direct initialisation of instance variables
+_________________________________________________________________________________________________________________
+code:-
+class Student
+{
+ int rollno;
+ String name;
+ int marks;
+}
+class ExecuteStudent1
+{
+ public static void main(String args[])
+{
+ Student s1;
+ Student s2;
+ s1=new Student();
+ s2=new Student();
+ s1.rollno=101;s2.rollno=201;
+ s1.name=abc;s2.name=cde;
+ s1.marks=100;s2.marks=200;
+ System.out.println(s1.rollno);
+ System.out.println(s1.name);
+ System.out.println(s1.marks); 
+ System.out.println(s2.rollno);
+ System.out.println(s2.name);
+ System.out.println(s2.marks);
+}
+}
+
+36)program on direct initiatisation of instance variables taking values from user
+_____________________________________________________________________________________________________________
+code:-
+import java.util.*;
+class Student
+{
+ int rollno;
+ String name;
+ int marks;
+}
+class ExecuteStudent3
+{
+ public static void main(String args[])
+{
+ Student s1;
+ Student s2;
+ s1=new Student();
+ s2=new Student();
+ Scanner sc=new Scanner(System.in);
+ s1.rollno=sc.nextInt();
+ s1.name=sc.nextLine();
+ s1.marks=sc.nextInt();
+ s2.rollno=sc.nextInt();
+ s2.name=sc.nextLine();
+ s2.marks=sc.nextInt();
+ System.out.println(s1.rollno);
+ System.out.println(s1.name);
+ System.out.println(s1.marks); 
+ System.out.println(s2.rollno);
+ System.out.println(s2.name);
+ System.out.println(s2.marks);
+}
+}
+37)program on initialisation through method call
+__________________________________________________________________________________________________________________
+eg:-student data
+_____________________________________
+code:-class Student
+{
+ int rollno; 
+ String name;
+ int marks;
+ void setStudent(int r,String n,int m)
+ {
+  rollno=r;
+  name=n;
+  marks=m;
+ }
+ void displayStudent()
+ {
+  System.out.println("rollno="+rollno);
+  System.out.println("name="+name); 
+  System.out.println("marks="+marks);
+ }
+}
+class MethodStudent
+{
+ public static void main(String args[])
+ {
+  Student s1;
+  Student s2;
+  s1=new Student();
+  s2=new Student();
+  s1.setStudent(101,"sindhu",100);
+  s2.setStudent(102,"sweety",200);
+  s1.displayStudent();
+  s2.displayStudent();
+ }
+}
+ 
+eg:-employee data
+________________________
+code:-
+class Employee
+{
+ int empid;
+ String name;
+ int empsal;
+ }
+class EmployeeSal
+{
+ public static void main(String argv[])
+ {
+ Employee e1; Employee e2;
+ e1=new Employee();
+ e2=new Employee();
+ e1.empid=111;e2.empid=112;
+ e1.name="suresh";e2.name="ramesh";
+ e1.empsal=670000;e2.empsal=770000;
+ System.out.println(e1.empid);
+ System.out.println(e1.name);
+ System.out.println(e1.empsal);
+ System.out.println(e2.empid);
+ System.out.println(e2.name);
+ System.out.println(e2.empsal);
+ }
+}
+
+38)program with this keyword
+______________________________________________________________________________________________________________
+code:-
+class Student
+{
+ int rollno; 
+ String name;
+ int marks;
+ void setStudent(int rollno,String n,int m)
+ {
+ //name confliction between local and instance reduced by this
+  this.rollno=rollno;
+  name=n;
+  marks=m;
+ }
+ void displayStudent()
+ {
+  System.out.println("rollno="+rollno);
+  System.out.println("name="+name); 
+  System.out.println("marks="+marks);
+ }
+}
+class WithThisstudent
+{
+ public static void main(String args[])
+ {
+  Student s1;
+  Student s2;
+  s1=new Student();
+  s2=new Student();
+  s1.setStudent(101,"sindhu",100);
+  s2.setStudent(102,"sweety",200);
+  s1.displayStudent();
+  s2.displayStudent();
+ }
+}
+ 
+39)program without this keyword
+_______________________________________________________________________________________________________________
+code:-
+class Student
+{
+ int rollno; 
+ String name;
+ int marks;
+ void setStudent(int rollno,String n,int m)
+ {
+ //name confliction between local and instance
+  rollno=rollno;
+  name=n;
+  marks=m;
+ }
+ void displayStudent()
+ {
+  System.out.println("rollno="+rollno);
+  System.out.println("name="+name); 
+  System.out.println("marks="+marks);
+ }
+}
+class WithoutThisstudent
+{
+ public static void main(String args[])
+ {
+  Student s1;
+  Student s2;
+  s1=new Student();
+  s2=new Student();
+  s1.setStudent(101,"sindhu",100);
+  s2.setStudent(102,"sweety",200);
+  s1.displayStudent();
+  s2.displayStudent();
+ }
+}
+ 
+40)program on initialisation through constructor call
+______________________________________________________________________________________________________________
+code:-
+class Student
+{
+ int rollno; 
+ String name;
+ int marks;
+ Student(int rollno,String n,int m)
+ {
+ //name confliction between local and instance reduced by this
+  this.rollno=rollno;
+  name=n;
+  marks=m;
+ }
+ void displayStudent()
+ {
+  System.out.println("rollno="+rollno);
+  System.out.println("name="+name); 
+  System.out.println("marks="+marks);
+ }
+}
+class ConstructorStudent
+{
+ public static void main(String args[])
+ {
+  Student s1;
+  Student s2;
+  s1=new Student(101,"sindhu",100);
+  s2=new Student(102,"sweety",200);
+  s1.displayStudent();
+  s2.displayStudent();
+ }
+}
+ 
+41)program on constructor overloading without default value
+_____________________________________________________________________________________________________________
+code:-
+class Student
+{
+ int rollno; 
+ String name;
+ int marks;
+ int rank;
+ Student(int r,String n,int m)
+ {
+  rollno=r;
+  name=n;
+  marks=m;
+ }
+  Student(int r,String n,int m,int ra)
+ {
+  rollno=r;
+  name=n;
+  marks=m;
+  rank=ra;
+ }
+ void displayStudent()
+ {
+  System.out.println("rollno="+rollno);
+  System.out.println("name="+name); 
+  System.out.println("marks="+marks);
+  if(rank!=0)
+  {
+  System.out.println("rank="+rank);
+  }
+ }
+}
+class Constructor1
+{
+ public static void main(String args[])
+ {
+  Student s1;
+  Student s2;
+  s1=new Student(101,"sindhu",100);
+  s2=new Student(102,"sweety",200,1);
+  s1.displayStudent();
+  s2.displayStudent();
+ }
+}
+ 
+42)program on constructor overloading with default value
+________________________________________________________________________________________________________________
+code:-
+class Student
+{
+ int rollno; 
+ String name;
+ int marks;
+ int rank;
+ Student(int r,String n,int m)
+ {
+  rollno=r;
+  name=n;
+  marks=m;
+ }
+  Student(int r,String n,int m,int ra)
+ {
+  rollno=r;
+  name=n;
+  marks=m;
+  rank=ra;
+ }
+
+ 
+ void displayStudent()
+ {
+  System.out.println("rollno="+rollno);
+  System.out.println("name="+name); 
+  System.out.println("marks="+marks);
+  System.out.println("rank="+rank);
+ }
+}
+class Constructor
+{
+ public static void main(String args[])
+ {
+  Student s1;
+  Student s2;
+  s1=new Student(101,"sindhu",100);
+  s2=new Student(102,"sweety",200,1);
+  s1.displayStudent();
+  s2.displayStudent();
+ }
+}
+ 
+43)program on static variable
+______________________________________________________________________________________________________________
+code:-
+class A
+{
+ int x;
+ static int y;
+}
+class StaticA
+{
+ public static void main(String args[])
+ {
+  A a1=new A();
+  A a2=new A();
+  System.out.println(a1.y);
+  System.out.println(a2.y);
+  System.out.println(A.y);
+ }
+}
+
+44)program on explicit type casting
+______________________________________________________________________________________________________________
+code:-
+class Explicit
+{
+  public static void main(String args[])
+  {
+    float x;
+    int y;
+ //in java every decimal value is treated as double
+//so if want to make decimal value to float type attach f or F at end 
+    x=10.56f;
+//explicit type casting---->higher to low type by using caste operator--->> (type)
+    y=(int)x;
+    System.out.println("x="+x);
+    System.out.println("y="+y);
+   }
+}
+
+
+45)program on implicit type casting
+______________________________________________________________________________________________________________
+code:-
+class Implicit
+{
+  public static void main(String args[])
+  {
+    int x;
+    float y;
+    x=10;
+//implicit type casting---->low to higher type
+    y=x;
+    System.out.println("x="+x);
+    System.out.println("y="+y);
+   }
+}
+
+   
+46)print ascii value
+_______________________________________________________________________________________________________________
+code:-
+import java.util.*;
+class Ascii
+{
+ public static void main(String args[])
+ {
+   String s1;
+   char ch;
+   Scanner sc=new Scanner(System.in);
+   s1=sc.nextLine();
+   ch=s1.charAt(0);
+   System.out.println("ascii="+(int)ch);
+ }
+}
+
+47)type casting char to float
+______________________________________________________________________________________________________________
+code:-
+class ChartoFloat
+{
+  public static void main(String args[])
+  {
+    char x;
+    float y;
+    x='a';
+//explicit type casting---->higher to low type by using caste operator--->> (type)
+    y=x;
+    System.out.println("x="+x);
+    System.out.println("y="+y);
+   }
+}
+
+ 
+48)type casting char to int
+______________________________________________________________________________________________________________
+code:-
+class ChartoInt
+{
+  public static void main(String args[])
+  {
+    char x;
+    int y;
+    x='a';
+//explicit type casting---->higher to low type by using caste operator--->> (type)
+    y=x;
+    System.out.println("x="+x);
+    System.out.println("y="+y);
+   }
+}
+
+   
+49)type casting float to char
+_______________________________________________________________________________________________________________
+code:-
+class Floattochar
+{
+  public static void main(String args[])
+  {
+    float x;
+    char y;
+    x=65.30f;
+//explicit type casting---->higher to low type by using caste operator--->> (type)
+    y=(char)x;
+    System.out.println("x="+x);
+    System.out.println("y="+y);
+   }
+}
+
+50)type casting int to char
+____________________________________________________________________________________________________________
+code:-
+class InttoChar
+{
+  public static void main(String args[])
+  {
+    int x;
+    char y;
+    x=97;
+//explicit type casting---->higher to low type by using caste operator--->> (type)
+    y=(char)x;
+    System.out.println("x="+x);
+    System.out.println("y="+y);
+   }
+}
+
+   
+51)type casting int to long
+____________________________________________________________________________________________________________
+code:-
+class InttoLong
+{
+  public static void main(String args[])
+  {
+    int x;
+    long y;
+    x=33;
+//explicit type casting---->higher to low type by using caste operator--->> (type)
+    y=x;
+    System.out.println("x="+x);
+    System.out.println("y="+y);
+   }
+}
+
+52)type casting long to int
+___________________________________________________________________________________________________________
+code:-
+class LongtoInt
+{
+  public static void main(String args[])
+  {
+    long x;
+    int y;
+    x=3310;
+//explicit type casting---->higher to low type by using caste operator--->> (type)
+    y=(int)x;
+    System.out.println("x="+x);
+    System.out.println("y="+y);
+   }
+}
+
+53)program on creating string objects
+____________________________________________________________________________________________________________
+code:-
+class StringExe
+{
+ public static void main(String args[])
+ {
+  String s1="hello";
+  String s2="hello";            //assigning string literal to string variable
+  String s3=new String("world");
+  String s4=new String("world");//assigning string literel to string class constructor
+ // if(s1==s2)
+ //{
+ //System.out.println("both address are equal");  //here for s1&s2 same address with diff referrence variables 
+   
+ // }
+ //__________________________________________________or_______________________________
+   if(s3==s4)
+  {
+    System.out.println("both address are equal");  //here new object is created so different address for s1&s2
+  }
+  else
+  {
+    System.out.println("both address are not equal");
+  }
+ }
+}
+
+
+54)program on immutable objects
+_________________________________________________________________________________________________________________
+code:-
+class Concat1
+{
+ public static void main(String args[])
+ {
+  String s1="hello";
+  String s2="hello";     //here no object will be distroyed bcz for "hello" if s1 referrence is deleted
+                        // s2 will be there
+  s1.concat("java");
+  System.out.println(s1);
+ }
+}
+
+55)program on string concatenation
+_____________________________________________________________________________________________________________
+code:-
+class Concate
+{
+  public static void main(String argv[])
+  {
+    String s1="hello";
+    s1=s1.concat("java");    //here s1 object is deleted by garbage collector automatically bcz s1 is assigned
+                            //to concatination method 
+    System.out.println(s1);
+  }
+}
+
+56)program on inheritance
+_____________________________________________________________________________________________________________
+code:-
+class Person
+{
+	String name;
+	int age;
+	void setPerson(String n,int a)
+	{
+	name=n;
+	age=a;
+	}
+	void displayPerson()
+	{
+		System.out.println("name="+name);
+		System.out.println("age="+age);
+	}
+	
+}
+class Student extends Person
+{
+    int rollno;
+    int marks;
+    void setStudent(String n,int a,int r,int m)
+    {
+      setPerson(n,a);
+      rollno=r;
+      marks=m;
+    }
+    void displayStudent()
+    {
+      displayPerson();
+      System.out.println("rollno="+rollno);
+      System.out.println("marks="+marks);
+      
+    }
+}
+
+class Employee extends Person
+{
+   
+    int empid;
+    float empSal;
+   void setEmployee(String n,int a,int eid,float esl)
+   {
+	    setPerson(n,a);
+	    empid=eid;
+	    empSal=esl;
+   }
+   void displayEmployee()
+   {
+	   displayPerson();
+	   System.out.println("empid="+empid);
+	   System.out.println("empsl="+empSal);
+   }
+}
+public class ExecutePerson {
+
+    public static void main(String[] args) {
+
+Student s1=new Student();
+Student s2=new Student();
+
+Employee e1=new Employee();
+Employee e2=new Employee();
+
+
+s1.setStudent("raju",21,101,456);
+s2.setStudent("radha",22,102,556);
+
+e1.setEmployee("ramesh",26,111,67000);
+e2.setEmployee("suresh",26,112,77000);
+
+s1.displayStudent();
+s2.displayStudent();
+
+e1.displayEmployee();
+e2.displayEmployee();
+
+
+    }
+
+}
+
+57)program on static method
+____________________________________________________________________________________________________________
+code:-
+class Aclass
+{
+    int i;
+    static int j;
+    //instace method
+    void displayI()
+    {
+        //using instance variable
+        //impact of this method will be different  on different object
+        System.out.println(i); 
+    }
+
+    static void displayJ()
+    {
+        //using static variable
+        //impact of this method will be same on every object
+        System.out.println(j); 
+        //System.out.println(i); 
+    }
+    //static method
+    
+}
+public class StaticExecute 
+{
+
+    public static void main(String[] args) {
+
+
+    
+        
+        Aclass a1=new Aclass();
+        Aclass a2=new Aclass();
+
+        
+        a1.i=10;
+        a2.i=20;
+        Aclass.j=30;
+        
+        //instance method should be called with object reffrence
+        a1.displayI(); // -> 10 ->there is impact of object
+        a2.displayI(); // -> 20 ->there is impact of object
+        
+        
+        //static method can be called with class name
+        Aclass.displayJ();   //->30   -> recomended
+        
+        //static method can also  be called with  object reffrence
+                a1.displayJ();  //->30  ->not recomended ->no impact of object
+                a2.displayJ();  //->30  ->not recomended
+        
+
+    
+
+
+    }
+
+}
+
+58)program on recursive call
+______________________________________________________________________________________________________________
+code:-
+class R
+{
+	void m1()
+	{
+		m1(); // if method call from same method 
+		      //defination then it is called as
+		      //recursive method call
+		
+	}   //here we get error ie; stack over flow ie;infinite
+}// to stop this we use return keyword
+public class RecursiveCall
+{
+    public static void main(String[] args) 
+	{
+	   R r=new R();
+	   r.m1();
+	  
+
+	}
+
+}
+
+59)program on to print 1 to 5 using loop and recursion
+______________________________________________________________________________________________________________
+code:-
+class Rec
+{   
+	int i=0;
+	void m1()
+	{
+		 i++;
+		System.out.println(i);
+		if(i==5)
+		{
+			return;
+		}
+		m1();
+	}
+}
+public class Recursion {
+
+	public static void main(String[] args) 
+	{
+		Rec r=new Rec();
+		r.m1();
+	}
+
+}
+
+60)program to print factorial of 5 using recursion
+____________________________________________________________________________________________________________
+code:-
+class Factorial
+{
+ int i=0;
+ int fact=1;
+ void m()
+ {
+	 i++;
+	 fact=fact*i;
+	 if(i==5)
+	 {
+	  System.out.println(fact);
+	  return;
+	  }
+	 m();
+ }
+  
+} 
+public class FactorialOf5
+{
+
+	public static void main(String[] args) 
+	{
+		Factorial f=new Factorial();
+		f.m();
+
+	}
+
+}
+
+61)program to print factorial of N reading N from user
+___________________________________________________________________________________________________________
+code:-
+import java.util.Scanner;
+class Fn
+{
+  int i=0;
+  int fact=1;
+  Scanner sc=new Scanner(System.in);
+   int n=sc.nextInt();
+ 
+  void m()
+ {
+	 i++;
+	 fact=fact*i;
+	 if(i==n)
+	 {
+	  System.out.println(fact);
+	  return;
+	  }
+	 m();
+ }
+}  
+public class NFactorial
+ {
+   public static void main(String[] args)	
+  {
+     Fn f=new Fn();
+     f.m();
+  }
+
+}
+
+62)program to print 5th table using recursion
+__________________________________________________________________________________________________________
+code:-
+class T
+{
+	int i=0;
+	 int n=5;
+	int multi;
+	void m()
+	{
+	 i++;
+	 multi=n*i;
+	 System.out.println("5*"+i+"="+multi);
+	 if(i==10)
+	 {
+		 
+		 return;
+	 }
+	 m();	
+}
+
+}
+public class Recursive5Table
+{
+  public static void main(String args[])
+  {
+	 T t=new T();
+	 t.m();
+
+	}
+
+}
+
+63)program without method override
+_____________________________________________________________________________________________________________
+code:-
+class Polygon
+{
+	void info()
+	{
+		System.out.println("closed container");
+	}
+}
+class Square extends Polygon
+{
+	void area()
+	{
+		System.out.println("area of square");
+	}
+}
+public class PolygonExe
+{
+   public static void main(String[] args)
+   {
+		Square s=new Square();
+		s.info();
+
+	}
+
+}
+
+64)program on method override
+________________________________________________________________________________________________________
+code:-
+class Polygon1
+{
+	void info()
+	{
+		System.out.println("closed container");
+	}
+}
+class Square1 extends Polygon1
+{
+	void info()
+	{
+		System.out.println("all sides are  same");
+	}
+	void area()
+	{
+		System.out.println("area of square");
+	}
+}
+public class PolygonOverride
+{
+   public static void main(String[] args)
+   {
+		Square1 s=new Square1();
+		s.info();
+
+	}
+
+}
+
+
+
+
+
+     
